@@ -1,0 +1,18 @@
+server:
+  port: 9093
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
